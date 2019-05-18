@@ -1,0 +1,104 @@
+/*
+	Social media icons
+*/
+
+.icon-links {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	top: 3px;
+	text-align: center;
+	border-top: 1px solid #eee;
+	padding-top: .4rem;
+
+	@include media_larger_than_mobile {
+		float: right;
+		border-top: none;
+		padding-top: 0;
+	}
+
+	.icon-link-item {
+		display: inline-block;
+		margin-left: 5px;
+	}
+
+}
+
+.fa, .fas, .fab {
+	font-size: 20px;
+	padding: 5px;
+	-o-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	transition:  0.3s;
+
+	&:hover {
+		color: $blackish;
+	}
+}
+
+.fa-envelope:hover {
+	color: #f39c12;
+}
+
+.fa-twitter {
+	color: #1da1f2;
+}
+
+.fa-telegram {
+	color: #42aae3;
+}
+
+.fa-mastodon {
+	color: #2b90d9;
+}
+
+.fa-instagram {
+	color: #375989;
+}
+
+.fa-github {
+	color: #333;
+}
+
+.fa-gitlab {
+	color: #fca326;
+}
+
+.fa-ubuntu {
+	color: #dd4814;
+}
+
+.fa-linkedin {
+	color: #0073a4;
+}
+
+.fa-facebook {
+	color: #3d5b99;
+}
+
+.fa-google-plus {
+	color: #e64a41;
+}
+
+.fa-pinterest {
+	color: #bd081c;
+}
+
+.fa-medium {
+	color: #00AB6C;
+}
+
+.fa-deviantart {
+	color: #4dc47d;
+}
+
+.fa-codepen {
+	color: black;
+}
+
+.fa-rss-square {
+	color: #ff6600;
+}

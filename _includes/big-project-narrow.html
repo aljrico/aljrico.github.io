@@ -1,0 +1,25 @@
+<div class="user-projects">
+  {% if include.layout == "right" %}
+  <div class="images-right-narrow">
+    <img alt="{{ include.title }}" src="/assets/img/{{ include.image }}"/>
+  </div>
+  {% elsif include.layout == "left" %}
+  <div class="images-left-narrow">
+    <img alt="{{ include.title }}" src="/assets/img/{{ include.image }}"/>
+  </div>
+  {% endif %}
+
+  {% if include.layout == "right" %}
+  <div class="contents-narrow">
+    <h3> {{ include.title }} </h3>
+    <p>{{ include.content }}</p>
+    <a class="project-link" href="{{ include.link }}">Check it out</a>
+  </div>
+  {% elsif include.layout == "left" %}
+  <div class="contents-right-narrow">
+    <h3> {{ include.title }} </h3>
+    <p>{{ include.content }}</p>
+    <a class="project-link" href="{{ include.link }}">Check it out</a>
+  </div>
+  {% endif %}
+</div>

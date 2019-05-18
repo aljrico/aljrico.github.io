@@ -1,0 +1,115 @@
+.small-projects-container {
+  display: flex;
+  flex-direction: grid;
+  flex-wrap: wrap;
+  align: right;
+  width: 80%;
+  max-width: $container-width;
+  margin: 0 auto;
+  @media only screen and (min-width: $cut) {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: nowrap;
+  }
+}
+
+.small-project {
+  margin-top: 10px;
+  padding: 10px;
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  h4 {
+    margin-top: 15px;
+    margin-bottom: 9px;
+  }
+  li {
+    color: $text-color;
+    font-size: 1.1rem;
+  }
+  p {
+    font-size: 0.9em;
+    margin-right: 5px;
+    float: left;
+    width: 100%;
+
+    @media only screen and (min-width: $cut) {
+      float: left;
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: $cut) {
+    float: left;
+    max-width: 31%;
+  }
+}
+
+.small-contents {
+  float: right;
+  margin-top: -5%;
+  width: 65%;
+  @media only screen and (min-width: $cut) {
+    float: right;
+    margin-top: -5%;
+    width: 65%;
+  }
+}
+
+.small-images {
+  float: left;
+  width: 25%;
+  @media only screen and (min-width: $cut) {
+    float: left;
+    width: 25%;
+  }
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: left;
+    width: 100%;
+    max-width: 100px;
+    @media only screen and (min-width: $cut) {
+      float: left;
+      width: 100%;
+    }
+  }
+}
+
+.small-project-link {
+  font-size: 0.8em;
+  display: inline-block;
+  padding: 5px 15px;
+  color: $main;
+  background-color: transparent;
+  border: 1px solid $main;
+  border-radius: 3px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.1s ease-out,
+              background-color 0.1s ease-out,
+              border-color 0.1s ease-out;
+  &:hover {
+    border: 1px solid $main;
+    background-color: $green;
+    border-color: $green;
+    color: #fff;
+    transition: color 0.1s ease-in,
+                background-color 0.1s ease-in,
+                border-color 0.1s ease-in;
+  }
+  &:active {
+    background-color: $green;
+    border-color: $green;
+    color: #fff;
+    transition: color 0.1s ease-in,
+                background-color 0.1s ease-in,
+                border-color 0.1s ease-in;
+  }
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head profile="http://www.w3.org/2005/10/profile">
+<link rel="icon" type="image/x-icon" href="../../favicon.png">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title>Mario Sequencer</title>
+
+		<link rel="stylesheet" href="../assets/css/styles.css">
+		<style>
+			.game { margin:0; padding:0; border:0; left:0; top:0;}
+			.right-bottom .github-fork-ribbon {	background-color: #090;}
+		</style>
+	</head>
+<body>
+	<div class="wrapper">
+		<h1>Mario Sequencer</h1>
+		<hr>
+
+		<p> Chage size:
+			<select id="magnify">
+				<option value="1">1x1</option>
+				<option value="2" selected>2x2</option>
+				<option value="3">3x3</option>
+			</select>
+		 </p>
+		<div id="console"
+			style="position: relative; margin:0px auto; padding:0px; border:0px;">
+			<canvas id="layer1" class="game"
+				style="position: static; z-index: 0; opacity:1"></canvas>
+			<canvas id="layer2" class="game"
+				style="position: absolute; z-index: 1;"></canvas>
+			<image id="spinner" src="image/loading_transparent_.gif" width="46px"
+				style="position: absolute; top:35%; left:47%; z-index:4;" />
+		</div>
+		<center>
+			<button onclick="download()">Download</button>
+		</center>
+		<script src="shared.js"></script>
+
+	<p>Forked by <a href="https://github.com/aldomann/">aldomann</a>. Created by <a href="https://github.com/minghai">Narumi Katoh.</a></p>
+<!--
+    <footer>
+      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </footer>
+-->
+  </div>
+  <script src="../assets/js/scale.fix.js"></script>
+</body>
+</html>

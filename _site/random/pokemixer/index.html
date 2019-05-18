@@ -1,0 +1,697 @@
+
+<!DOCTYPE html>
+<html xmlns:og="http://opengraphprotocol.org/schema/">
+<head>
+  <title>Pokemon Fusion</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <!-- <link href="https://pokemonfusion-assets.s3.amazonaws.com/assets/application-2331afa83a790fbd954f4c4bdbd46423.css" media="all" rel="stylesheet" type="text/css" /> -->
+  <script src="https://pokemonfusion-assets.s3.amazonaws.com/assets/application-0aa512ad798e43f760719a1ac5f93294.js" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="MtmVWkjzdLphh6MBM1dqhHVcvA+9l5m8uI7eiWdR2y0=" name="csrf-token" />
+  <link rel="icon" type="image/x-icon" href="favicon.png" />
+  <link rel="apple-touch-icon" href="http://images.alexonsager.net/pokemon/touch-icon-iphone.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="http://images.alexonsager.net/pokemon/touch-icon-ipad.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="http://images.alexonsager.net/pokemon/touch-icon-iphone-retina.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="http://images.alexonsager.net/pokemon/touch-icon-ipad-retina.png" />
+  <meta name="description" content="Pokemon Fusion: Automatically fuse two pokemon to create an entirely different creature." />
+  <link rel="image_src" href="http://images.alexonsager.net/pokemon/fused/9/9.25.png" />
+  <meta property="og:title" content="Pokemon Fusion"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" id="metaurl" content="http://pokemon.alexonsager.net"/>
+  <meta property="og:image" id="metaimg" content="http://images.alexonsager.net/pokemon/fused/9/9.25.png"/>
+  <meta property="og:site_name" content="alexonsager.net" />
+  <meta property="fb:admins" content="213306"/>
+  <meta property="og:description" content="Pokemon Fusion: Automatically fuse two pokemon to create an entirely different creature."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="apple-mobile-web-app-title" content="Pokemon Fusion">
+</head>
+<body>
+
+<div class="wrapper">
+  <h1>Pokemon Fusion</h1>
+  <hr>
+
+  <div id="main" class="content">
+    <div id="fused">
+      <div class="title">
+        <span id="pk_name">Bellgar</span>
+      </div>
+      <img id="pk_img" height=160 width=160 src=http://images.alexonsager.net/pokemon/fused/94/94.69.png /><br />
+      <a href="#" onclick="pokego(Math.floor(Math.random()*151), Math.floor(Math.random()*151)); _gaq.push(['_trackEvent','fuse', 'randomize', 'en']); return false;">Random</a>
+    </div>
+    <div class="column aR">
+      <div class="fR">
+        <select id="select1" name="select1" onchange="getFusion(); _gaq.push([&#x27;_trackEvent&#x27;,&#x27;fuse&#x27;, &#x27;firstSelect&#x27;, &#x27;en&#x27;]); "><option value="1">Bulbasaur</option>
+<option value="2">Ivysaur</option>
+<option value="3">Venusaur</option>
+<option value="4">Charmander</option>
+<option value="5">Charmeleon</option>
+<option value="6">Charizard</option>
+<option value="7">Squirtle</option>
+<option value="8">Wartortle</option>
+<option value="9">Blastoise</option>
+<option value="10">Caterpie</option>
+<option value="11">Metapod</option>
+<option value="12">Butterfree</option>
+<option value="13">Weedle</option>
+<option value="14">Kakuna</option>
+<option value="15">Beedrill</option>
+<option value="16">Pidgey</option>
+<option value="17">Pidgeotto</option>
+<option value="18">Pidgeot</option>
+<option value="19">Rattata</option>
+<option value="20">Raticate</option>
+<option value="21">Spearow</option>
+<option value="22">Fearow</option>
+<option value="23">Ekans</option>
+<option value="24">Arbok</option>
+<option value="25">Pikachu</option>
+<option value="26">Raichu</option>
+<option value="27">Sandshrew</option>
+<option value="28">Sandslash</option>
+<option value="29">Nidoran(f)</option>
+<option value="30">Nidorina</option>
+<option value="31">Nidoqueen</option>
+<option value="32">Nidoran(m)</option>
+<option value="33">Nidorino</option>
+<option value="34">Nidoking</option>
+<option value="35">Clefairy</option>
+<option value="36">Clefable</option>
+<option value="37">Vulpix</option>
+<option value="38">Ninetales</option>
+<option value="39">Jigglypuff</option>
+<option value="40">Wigglytuff</option>
+<option value="41">Zubat</option>
+<option value="42">Golbat</option>
+<option value="43">Oddish</option>
+<option value="44">Gloom</option>
+<option value="45">Vileplume</option>
+<option value="46">Paras</option>
+<option value="47">Parasect</option>
+<option value="48">Venonat</option>
+<option value="49">Venomoth</option>
+<option value="50">Diglett</option>
+<option value="51">Dugtrio</option>
+<option value="52">Meowth</option>
+<option value="53">Persian</option>
+<option value="54">Psyduck</option>
+<option value="55">Golduck</option>
+<option value="56">Mankey</option>
+<option value="57">Primeape</option>
+<option value="58">Growlithe</option>
+<option value="59">Arcanine</option>
+<option value="60">Poliwag</option>
+<option value="61">Poliwhirl</option>
+<option value="62">Poliwrath</option>
+<option value="63">Abra</option>
+<option value="64">Kadabra</option>
+<option value="65">Alakazam</option>
+<option value="66">Machop</option>
+<option value="67">Machoke</option>
+<option value="68">Machamp</option>
+<option value="69" selected="selected">Bellsprout</option>
+<option value="70">Weepinbell</option>
+<option value="71">Victreebel</option>
+<option value="72">Tentacool</option>
+<option value="73">Tentacruel</option>
+<option value="74">Geodude</option>
+<option value="75">Graveler</option>
+<option value="76">Golem</option>
+<option value="77">Ponyta</option>
+<option value="78">Rapidash</option>
+<option value="79">Slowpoke</option>
+<option value="80">Slowbro</option>
+<option value="81">Magnemite</option>
+<option value="82">Magneton</option>
+<option value="83">Farfetchd</option>
+<option value="84">Doduo</option>
+<option value="85">Dodrio</option>
+<option value="86">Seel</option>
+<option value="87">Dewgong</option>
+<option value="88">Grimer</option>
+<option value="89">Muk</option>
+<option value="90">Shellder</option>
+<option value="91">Cloyster</option>
+<option value="92">Gastly</option>
+<option value="93">Haunter</option>
+<option value="94">Gengar</option>
+<option value="95">Onix</option>
+<option value="96">Drowzee</option>
+<option value="97">Hypno</option>
+<option value="98">Krabby</option>
+<option value="99">Kingler</option>
+<option value="100">Voltorb</option>
+<option value="101">Electrode</option>
+<option value="102">Exeggcute</option>
+<option value="103">Exeggutor</option>
+<option value="104">Cubone</option>
+<option value="105">Marowak</option>
+<option value="106">Hitmonlee</option>
+<option value="107">Hitmonchan</option>
+<option value="108">Lickitung</option>
+<option value="109">Koffing</option>
+<option value="110">Weezing</option>
+<option value="111">Rhyhorn</option>
+<option value="112">Rhydon</option>
+<option value="113">Chansey</option>
+<option value="114">Tangela</option>
+<option value="115">Kangaskhan</option>
+<option value="116">Horsea</option>
+<option value="117">Seadra</option>
+<option value="118">Goldeen</option>
+<option value="119">Seaking</option>
+<option value="120">Staryu</option>
+<option value="121">Starmie</option>
+<option value="122">Mr. Mime</option>
+<option value="123">Scyther</option>
+<option value="124">Jynx</option>
+<option value="125">Electabuzz</option>
+<option value="126">Magmar</option>
+<option value="127">Pinsir</option>
+<option value="128">Tauros</option>
+<option value="129">Magikarp</option>
+<option value="130">Gyarados</option>
+<option value="131">Lapras</option>
+<option value="132">Ditto</option>
+<option value="133">Eevee</option>
+<option value="134">Vaporeon</option>
+<option value="135">Jolteon</option>
+<option value="136">Flareon</option>
+<option value="137">Porygon</option>
+<option value="138">Omanyte</option>
+<option value="139">Omastar</option>
+<option value="140">Kabuto</option>
+<option value="141">Kabutops</option>
+<option value="142">Aerodactyl</option>
+<option value="143">Snorlax</option>
+<option value="144">Articuno</option>
+<option value="145">Zapdos</option>
+<option value="146">Moltres</option>
+<option value="147">Dratini</option>
+<option value="148">Dragonair</option>
+<option value="149">Dragonite</option>
+<option value="150">Mewtwo</option>
+<option value="151">Mew</option></select>
+        <br />
+        <img id="pic1" width=80 height=80 src=http://images.alexonsager.net/pokemon/69.png /><br />
+        <a href = "#" onclick="pokego(Math.floor(Math.random()*151), 0); _gaq.push(['_trackEvent','fuse', 'firstRandom', 'en']); return false;">Random</a>
+      </div>
+
+    </div>
+    <div class="column narrow">
+      <a class="button" href="#" onclick="swap(); _gaq.push(['_trackEvent','fuse', 'swap', 'en']); return false;"><img src="http://images.alexonsager.net/pokemon/swap.png" /></a>
+    </div>
+    <div class="column aL">
+      <div class="fL">
+        <select id="select2" name="select2" onchange="getFusion(); _gaq.push([&#x27;_trackEvent&#x27;,&#x27;fuse&#x27;, &#x27;secondSelect&#x27;, &#x27;en&#x27;]); "><option value="1">Bulbasaur</option>
+<option value="2">Ivysaur</option>
+<option value="3">Venusaur</option>
+<option value="4">Charmander</option>
+<option value="5">Charmeleon</option>
+<option value="6">Charizard</option>
+<option value="7">Squirtle</option>
+<option value="8">Wartortle</option>
+<option value="9">Blastoise</option>
+<option value="10">Caterpie</option>
+<option value="11">Metapod</option>
+<option value="12">Butterfree</option>
+<option value="13">Weedle</option>
+<option value="14">Kakuna</option>
+<option value="15">Beedrill</option>
+<option value="16">Pidgey</option>
+<option value="17">Pidgeotto</option>
+<option value="18">Pidgeot</option>
+<option value="19">Rattata</option>
+<option value="20">Raticate</option>
+<option value="21">Spearow</option>
+<option value="22">Fearow</option>
+<option value="23">Ekans</option>
+<option value="24">Arbok</option>
+<option value="25">Pikachu</option>
+<option value="26">Raichu</option>
+<option value="27">Sandshrew</option>
+<option value="28">Sandslash</option>
+<option value="29">Nidoran(f)</option>
+<option value="30">Nidorina</option>
+<option value="31">Nidoqueen</option>
+<option value="32">Nidoran(m)</option>
+<option value="33">Nidorino</option>
+<option value="34">Nidoking</option>
+<option value="35">Clefairy</option>
+<option value="36">Clefable</option>
+<option value="37">Vulpix</option>
+<option value="38">Ninetales</option>
+<option value="39">Jigglypuff</option>
+<option value="40">Wigglytuff</option>
+<option value="41">Zubat</option>
+<option value="42">Golbat</option>
+<option value="43">Oddish</option>
+<option value="44">Gloom</option>
+<option value="45">Vileplume</option>
+<option value="46">Paras</option>
+<option value="47">Parasect</option>
+<option value="48">Venonat</option>
+<option value="49">Venomoth</option>
+<option value="50">Diglett</option>
+<option value="51">Dugtrio</option>
+<option value="52">Meowth</option>
+<option value="53">Persian</option>
+<option value="54">Psyduck</option>
+<option value="55">Golduck</option>
+<option value="56">Mankey</option>
+<option value="57">Primeape</option>
+<option value="58">Growlithe</option>
+<option value="59">Arcanine</option>
+<option value="60">Poliwag</option>
+<option value="61">Poliwhirl</option>
+<option value="62">Poliwrath</option>
+<option value="63">Abra</option>
+<option value="64">Kadabra</option>
+<option value="65">Alakazam</option>
+<option value="66">Machop</option>
+<option value="67">Machoke</option>
+<option value="68">Machamp</option>
+<option value="69">Bellsprout</option>
+<option value="70">Weepinbell</option>
+<option value="71">Victreebel</option>
+<option value="72">Tentacool</option>
+<option value="73">Tentacruel</option>
+<option value="74">Geodude</option>
+<option value="75">Graveler</option>
+<option value="76">Golem</option>
+<option value="77">Ponyta</option>
+<option value="78">Rapidash</option>
+<option value="79">Slowpoke</option>
+<option value="80">Slowbro</option>
+<option value="81">Magnemite</option>
+<option value="82">Magneton</option>
+<option value="83">Farfetchd</option>
+<option value="84">Doduo</option>
+<option value="85">Dodrio</option>
+<option value="86">Seel</option>
+<option value="87">Dewgong</option>
+<option value="88">Grimer</option>
+<option value="89">Muk</option>
+<option value="90">Shellder</option>
+<option value="91">Cloyster</option>
+<option value="92">Gastly</option>
+<option value="93">Haunter</option>
+<option value="94" selected="selected">Gengar</option>
+<option value="95">Onix</option>
+<option value="96">Drowzee</option>
+<option value="97">Hypno</option>
+<option value="98">Krabby</option>
+<option value="99">Kingler</option>
+<option value="100">Voltorb</option>
+<option value="101">Electrode</option>
+<option value="102">Exeggcute</option>
+<option value="103">Exeggutor</option>
+<option value="104">Cubone</option>
+<option value="105">Marowak</option>
+<option value="106">Hitmonlee</option>
+<option value="107">Hitmonchan</option>
+<option value="108">Lickitung</option>
+<option value="109">Koffing</option>
+<option value="110">Weezing</option>
+<option value="111">Rhyhorn</option>
+<option value="112">Rhydon</option>
+<option value="113">Chansey</option>
+<option value="114">Tangela</option>
+<option value="115">Kangaskhan</option>
+<option value="116">Horsea</option>
+<option value="117">Seadra</option>
+<option value="118">Goldeen</option>
+<option value="119">Seaking</option>
+<option value="120">Staryu</option>
+<option value="121">Starmie</option>
+<option value="122">Mr. Mime</option>
+<option value="123">Scyther</option>
+<option value="124">Jynx</option>
+<option value="125">Electabuzz</option>
+<option value="126">Magmar</option>
+<option value="127">Pinsir</option>
+<option value="128">Tauros</option>
+<option value="129">Magikarp</option>
+<option value="130">Gyarados</option>
+<option value="131">Lapras</option>
+<option value="132">Ditto</option>
+<option value="133">Eevee</option>
+<option value="134">Vaporeon</option>
+<option value="135">Jolteon</option>
+<option value="136">Flareon</option>
+<option value="137">Porygon</option>
+<option value="138">Omanyte</option>
+<option value="139">Omastar</option>
+<option value="140">Kabuto</option>
+<option value="141">Kabutops</option>
+<option value="142">Aerodactyl</option>
+<option value="143">Snorlax</option>
+<option value="144">Articuno</option>
+<option value="145">Zapdos</option>
+<option value="146">Moltres</option>
+<option value="147">Dratini</option>
+<option value="148">Dragonair</option>
+<option value="149">Dragonite</option>
+<option value="150">Mewtwo</option>
+<option value="151">Mew</option></select>
+        <br />
+        <img id="pic2" width=80 height=80 src=http://images.alexonsager.net/pokemon/94.png /><br />
+        <a href="#" onclick="pokego(0, Math.floor(Math.random()*151)); _gaq.push(['_trackEvent','fuse', 'secondRandom', 'en']); return false;">Random</a>
+      </div>
+    </div>
+  </div>
+  <div style="clear:both"></div>
+  <div id="info">
+    <div style="width: 80%; margin: 0px auto;">
+      Based on the original version by <a href="http://www.alexonsager.net">Alex Onsager</a>.
+    </div>
+<!--
+    <footer>
+	  <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </footer>
+-->
+  </div>
+  <div style="display:none">
+    <select id="hiddenprefix" name="hiddenprefix"><option value="1">Bulb</option>
+<option value="2">Ivy</option>
+<option value="3">Venu</option>
+<option value="4">Char</option>
+<option value="5">Char</option>
+<option value="6">Char</option>
+<option value="7">Squirt</option>
+<option value="8">War</option>
+<option value="9">Blast</option>
+<option value="10">Cater</option>
+<option value="11">Meta</option>
+<option value="12">Butter</option>
+<option value="13">Wee</option>
+<option value="14">Kak</option>
+<option value="15">Bee</option>
+<option value="16">Pid</option>
+<option value="17">Pidg</option>
+<option value="18">Pidg</option>
+<option value="19">Rat</option>
+<option value="20">Rat</option>
+<option value="21">Spear</option>
+<option value="22">Fear</option>
+<option value="23">Ek</option>
+<option value="24">Arb</option>
+<option value="25">Pika</option>
+<option value="26">Rai</option>
+<option value="27">Sand</option>
+<option value="28">Sand</option>
+<option value="29">Nido</option>
+<option value="30">Nido</option>
+<option value="31">Nido</option>
+<option value="32">Nido</option>
+<option value="33">Nido</option>
+<option value="34">Nido</option>
+<option value="35">Clef</option>
+<option value="36">Clef</option>
+<option value="37">Vul</option>
+<option value="38">Nine</option>
+<option value="39">Jiggly</option>
+<option value="40">Wiggly</option>
+<option value="41">Zu</option>
+<option value="42">Gol</option>
+<option value="43">Odd</option>
+<option value="44">Gloo</option>
+<option value="45">Vile</option>
+<option value="46">Pa</option>
+<option value="47">Para</option>
+<option value="48">Veno</option>
+<option value="49">Veno</option>
+<option value="50">Dig</option>
+<option value="51">Dug</option>
+<option value="52">Meow</option>
+<option value="53">Per</option>
+<option value="54">Psy</option>
+<option value="55">Gol</option>
+<option value="56">Man</option>
+<option value="57">Prime</option>
+<option value="58">Grow</option>
+<option value="59">Arca</option>
+<option value="60">Poli</option>
+<option value="61">Poli</option>
+<option value="62">Poli</option>
+<option value="63">Ab</option>
+<option value="64">Kada</option>
+<option value="65">Ala</option>
+<option value="66">Ma</option>
+<option value="67">Ma</option>
+<option value="68">Ma</option>
+<option value="69">Bell</option>
+<option value="70">Weepin</option>
+<option value="71">Victree</option>
+<option value="72">Tenta</option>
+<option value="73">Tenta</option>
+<option value="74">Geo</option>
+<option value="75">Grav</option>
+<option value="76">Gol</option>
+<option value="77">Pony</option>
+<option value="78">Rapi</option>
+<option value="79">Slow</option>
+<option value="80">Slow</option>
+<option value="81">Magne</option>
+<option value="82">Magne</option>
+<option value="83">Far</option>
+<option value="84">Do</option>
+<option value="85">Do</option>
+<option value="86">See</option>
+<option value="87">Dew</option>
+<option value="88">Gri</option>
+<option value="89">Mu</option>
+<option value="90">Shell</option>
+<option value="91">Cloy</option>
+<option value="92">Gas</option>
+<option value="93">Haunt</option>
+<option value="94">Gen</option>
+<option value="95">On</option>
+<option value="96">Drow</option>
+<option value="97">Hyp</option>
+<option value="98">Krab</option>
+<option value="99">King</option>
+<option value="100">Volt</option>
+<option value="101">Electr</option>
+<option value="102">Exegg</option>
+<option value="103">Exegg</option>
+<option value="104">Cu</option>
+<option value="105">Maro</option>
+<option value="106">Hitmon</option>
+<option value="107">Hitmon</option>
+<option value="108">Licki</option>
+<option value="109">Koff</option>
+<option value="110">Wee</option>
+<option value="111">Rhy</option>
+<option value="112">Rhy</option>
+<option value="113">Chan</option>
+<option value="114">Tang</option>
+<option value="115">Kangas</option>
+<option value="116">Hors</option>
+<option value="117">Sea</option>
+<option value="118">Gold</option>
+<option value="119">Sea</option>
+<option value="120">Star</option>
+<option value="121">Star</option>
+<option value="122">Mr.</option>
+<option value="123">Scy</option>
+<option value="124">Jyn</option>
+<option value="125">Electa</option>
+<option value="126">Mag</option>
+<option value="127">Pin</option>
+<option value="128">Tau</option>
+<option value="129">Magi</option>
+<option value="130">Gyara</option>
+<option value="131">Lap</option>
+<option value="132">Dit</option>
+<option value="133">Ee</option>
+<option value="134">Vapor</option>
+<option value="135">Jolt</option>
+<option value="136">Flare</option>
+<option value="137">Pory</option>
+<option value="138">Oma</option>
+<option value="139">Oma</option>
+<option value="140">Kabu</option>
+<option value="141">Kabu</option>
+<option value="142">Aero</option>
+<option value="143">Snor</option>
+<option value="144">Artic</option>
+<option value="145">Zap</option>
+<option value="146">Molt</option>
+<option value="147">Dra</option>
+<option value="148">Dragon</option>
+<option value="149">Dragon</option>
+<option value="150">Mew</option>
+<option value="151">Mew</option></select>
+    <select id="hiddensuffix" name="hiddensuffix"><option value="1">basaur</option>
+<option value="2">ysaur</option>
+<option value="3">usaur</option>
+<option value="4">mander</option>
+<option value="5">meleon</option>
+<option value="6">izard</option>
+<option value="7">tle</option>
+<option value="8">tortle</option>
+<option value="9">toise</option>
+<option value="10">pie</option>
+<option value="11">pod</option>
+<option value="12">free</option>
+<option value="13">dle</option>
+<option value="14">una</option>
+<option value="15">drill</option>
+<option value="16">gey</option>
+<option value="17">eotto</option>
+<option value="18">eot</option>
+<option value="19">tata</option>
+<option value="20">icate</option>
+<option value="21">row</option>
+<option value="22">row</option>
+<option value="23">kans</option>
+<option value="24">bok</option>
+<option value="25">chu</option>
+<option value="26">chu</option>
+<option value="27">shrew</option>
+<option value="28">slash</option>
+<option value="29">oran</option>
+<option value="30">rina</option>
+<option value="31">queen</option>
+<option value="32">ran</option>
+<option value="33">rino</option>
+<option value="34">king</option>
+<option value="35">fairy</option>
+<option value="36">fable</option>
+<option value="37">pix</option>
+<option value="38">tales</option>
+<option value="39">puff</option>
+<option value="40">tuff</option>
+<option value="41">bat</option>
+<option value="42">bat</option>
+<option value="43">ish</option>
+<option value="44">oom</option>
+<option value="45">plume</option>
+<option value="46">ras</option>
+<option value="47">sect</option>
+<option value="48">nat</option>
+<option value="49">moth</option>
+<option value="50">lett</option>
+<option value="51">trio</option>
+<option value="52">th</option>
+<option value="53">sian</option>
+<option value="54">duck</option>
+<option value="55">duck</option>
+<option value="56">key</option>
+<option value="57">ape</option>
+<option value="58">lithe</option>
+<option value="59">nine</option>
+<option value="60">wag</option>
+<option value="61">whirl</option>
+<option value="62">wrath</option>
+<option value="63">ra</option>
+<option value="64">bra</option>
+<option value="65">kazam</option>
+<option value="66">chop</option>
+<option value="67">choke</option>
+<option value="68">champ</option>
+<option value="69">sprout</option>
+<option value="70">bell</option>
+<option value="71">bell</option>
+<option value="72">cool</option>
+<option value="73">cruel</option>
+<option value="74">dude</option>
+<option value="75">eler</option>
+<option value="76">em</option>
+<option value="77">ta</option>
+<option value="78">dash</option>
+<option value="79">poke</option>
+<option value="80">bro</option>
+<option value="81">mite</option>
+<option value="82">ton</option>
+<option value="83">fetchd</option>
+<option value="84">duo</option>
+<option value="85">drio</option>
+<option value="86">eel</option>
+<option value="87">gong</option>
+<option value="88">mer</option>
+<option value="89">uk</option>
+<option value="90">der</option>
+<option value="91">ster</option>
+<option value="92">tly</option>
+<option value="93">ter</option>
+<option value="94">gar</option>
+<option value="95">ix</option>
+<option value="96">zee</option>
+<option value="97">no</option>
+<option value="98">by</option>
+<option value="99">ler</option>
+<option value="100">orb</option>
+<option value="101">ode</option>
+<option value="102">cute</option>
+<option value="103">utor</option>
+<option value="104">bone</option>
+<option value="105">wak</option>
+<option value="106">lee</option>
+<option value="107">chan</option>
+<option value="108">tung</option>
+<option value="109">fing</option>
+<option value="110">zing</option>
+<option value="111">horn</option>
+<option value="112">don</option>
+<option value="113">sey</option>
+<option value="114">gela</option>
+<option value="115">khan</option>
+<option value="116">sea</option>
+<option value="117">dra</option>
+<option value="118">deen</option>
+<option value="119">king</option>
+<option value="120">yu</option>
+<option value="121">mie</option>
+<option value="122">mime</option>
+<option value="123">ther</option>
+<option value="124">nx</option>
+<option value="125">buzz</option>
+<option value="126">mar</option>
+<option value="127">sir</option>
+<option value="128">ros</option>
+<option value="129">karp</option>
+<option value="130">dos</option>
+<option value="131">ras</option>
+<option value="132">to</option>
+<option value="133">vee</option>
+<option value="134">eon</option>
+<option value="135">eon</option>
+<option value="136">eon</option>
+<option value="137">gon</option>
+<option value="138">nyte</option>
+<option value="139">star</option>
+<option value="140">to</option>
+<option value="141">tops</option>
+<option value="142">dactyl</option>
+<option value="143">lax</option>
+<option value="144">cuno</option>
+<option value="145">dos</option>
+<option value="146">tres</option>
+<option value="147">tini</option>
+<option value="148">nair</option>
+<option value="149">nite</option>
+<option value="150">two</option>
+<option value="151">ew</option></select>
+    <!-- <div id="url" style="display:none">http://pokemon.alexonsager.net</div>
+    <div id="share_text" style="display:none">Pokemon Fusion: Automatically fuse two pokemon to create an entirely different creature.</div>
+    <div id="share_example" style="display:none">Check out </div> -->
+  </div>
+</div>
+<script>$(document).ready(getFusion)</script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8798911-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script src="../assets/js/scale.fix.js"></script>
+</body>
+</html>

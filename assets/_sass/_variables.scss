@@ -1,0 +1,28 @@
+// Variables
+// ---------------------------------------/
+
+$container-width:    850px !default;
+$grid-gutter:        10px !default;
+
+// Colors
+$white:              #fff;
+$blackish:           #555;
+$black:              #444;
+$blacker:            #333;
+
+$main:               #009688;
+$sec:                #4B5664;
+$green:              #009688;
+$cut:                550px;
+
+// Styles
+$text-color:         $black;
+
+// Font stack
+$body-font: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+// The base body size
+$body-font-size: 13px !default;
+
+// Monospace font stack
+$mono-font: Menlo, Consolas, "Liberation Mono", Courier, monospace !default;

@@ -1,0 +1,85 @@
+// Page header styles
+
+.page-header { padding: 1.5rem 0;
+
+	max-width: $container-width;
+	margin: 0 auto;
+
+	.a {
+		text-decoration: none;
+		border-bottom: 0 solid;
+	}
+
+	.avatar {
+		width: 100px;
+		max-width: 100%;
+		overflow: hidden;
+		@include border-radius(100px);
+		margin: 0 auto;
+		display: block;
+	}
+
+	.header-name {
+		@include title-sans;
+		font-size: 3rem;
+		font-weight: 900;
+		text-align: center;
+		letter-spacing: -.15rem;
+		line-height: 1;
+		margin: 1rem 0 2rem;
+	}
+
+	.title-bar {
+		@include section_border;
+		padding: .4rem 0;
+		@include clearfix;
+
+		.header-title {
+			color: $text-color;
+			@include title-sans;
+			font-weight: 700;
+			font-size: 1.75rem;
+			line-height: 2rem;
+			letter-spacing: -.05rem;
+			text-align: center;
+			margin: 0 0 .5rem;
+
+			@include media_larger_than_mobile {
+				float: left;
+				margin: 0;
+				margin-right: 10px;
+			}
+		}
+
+		.header-subtitle {
+			color: $text-color;
+			@include title-sans;
+			font-weight: 300;
+			font-size: 1.75rem;
+			line-height: 2rem;
+			letter-spacing: -.05rem;
+			text-align: center;
+			margin: 0 0 .5rem;
+
+			@include media_larger_than_mobile {
+				float: left;
+				margin: 0;
+			}
+		}
+	}
+
+	.executive-summary {
+		@include media_larger_than_mobile { font-size: 1.125rem; }
+		color: $text-color;
+
+		p {
+			font-size: 16px;
+		}
+
+		a {
+			font-weight: 700;
+			color: $blacker;
+		}
+	}
+
+}

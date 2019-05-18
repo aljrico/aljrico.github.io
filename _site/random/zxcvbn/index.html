@@ -1,0 +1,53 @@
+<html>
+<head profile="http://www.w3.org/2005/10/profile">
+<link rel="icon" type="image/x-icon" href="../../favicon.png">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title>zxcvbn password strength test</title>
+
+		<script src="zxcvbn.js" type="text/javascript" async=""></script>
+		<script type="text/javascript" src="jquery.js"> </script>
+		<script type="text/javascript" src="mustache.js"></script>
+		<script type="text/javascript" src="test.js"></script>
+		<script type="text/javascript" src="zxcvbn-async.js"></script>
+		<script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-50642071-1', 'aldomann.github.io'); ga('send', 'pageview');</script>
+
+		<link rel="stylesheet" href="../assets/css/styles.css">
+		<link rel="stylesheet" href="../assets/css/pygment_trac.css">
+		<style type="text/css">
+			table {font-family: monospace;}
+			.match-sequence table {display: inline; margin-right: 30px;}
+			.match-sequence {margin-bottom: 100px;}
+			.match-sequence > table:nth-child(odd) {background-color: #ccc;}
+			.match-sequence > table:nth-child(even) {background-color: #eee;}
+		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1>zxcvbn test</h1>
+				<h2><a href="https://tech.dropbox.com/2012/04/zxcvbn-realistic-password-strength-estimation/">introduction</a></h2>
+				<h2><a href="https://github.com/lowe/zxcvbn">zxcvbn on github</a></h2>
+			</header>
+			<section>
+				<h3>Password strength test</h3>
+				<p>Have you ever wondered whether or not password strength meters help anyone? They’re employed on nearly every website with user capabilities.</p>
+
+				<p>Password strength meters can help users select stronger passwords but only if the script the meter uses to estimate password strength is helpful.</p>
+
+				<p>Below you can test Dropbox’s <a href="https://tech.dropbox.com/2012/04/zxcvbn-realistic-password-strength-estimation/">zxcvbn</a> library. <b><i>Please, be careful about who's watching, as the password field is fully visible.</i></b></p>
+
+				<input id="search-bar" type="text" size="50">
+				<div id="search-results"></div>
+			</section>
+
+			<footer>
+				<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+			</footer>
+		</div>
+		<script src="../assets/js/scale.fix.js"></script>
+	</body>
+</html>

@@ -1,0 +1,11 @@
+<ul class="icon-links">
+	{% for item in site.data.header.social %}
+		<li class="icon-link-item">
+		{% unless item.type == "fas" %}
+			<a href="{{ item.link }}" target="_blank"><i class="fab fa-{{ item.icon }}" ></i></a>
+		{% else %}
+			<a href="{{ item.link }}" target="_blank"><i class="fas fa-{{ item.icon }}" ></i></a>
+		{% endunless %}
+		</li>
+	{% endfor %}
+</ul>

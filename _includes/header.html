@@ -1,0 +1,17 @@
+<!-- You can turn off the avatar in _data/header.yml by setting to false -->
+{% if site.data.header.about_avatar == 'true' %}
+	<a style="color: #333; text-decoration: none;" href="https://aldomann.com/"><img src="{{ '/assets/images/avatar.png' | prepend: site.baseurl | replace: 'http://', 'https://' }}" alt="My Photo" class="avatar" itemprop="image"></a>
+{% endif %}
+
+<!-- Your name is defined in the _data/header.yml file -->
+<h1 class="header-name" itemprop="name"><a style="color: #333; text-decoration: none;" href="https://aldomann.com/">{{ site.data.header.about_name }}</a></h1>
+
+<div class="title-bar">
+
+	<!-- Your title is also defined in the _data/header.yml file -->
+	<h2 class="header-title" itemprop="jobTitle">{{ site.data.header.about_title }}</h2>
+	<h2 class="header-subtitle" itemprop="jobSubTitle">{{ site.data.header.about_subtitle }}</h2>
+
+	<!-- This is the markup for the icon links in the _data/header.yml file -->
+	{% include icon-links.html %}
+</div>

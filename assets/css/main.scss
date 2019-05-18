@@ -1,0 +1,20 @@
+---
+---
+
+@import "normalize";
+@import "fonts";
+
+@import "mixins";
+@import 'variables';
+
+@import 'base';
+@import 'about';
+@import 'projects';
+@import 'projects-small';
+
+// Header
+@import "header";
+@import "social-media";
+
+// Footer
+@import 'footer';

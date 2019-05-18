@@ -1,0 +1,24 @@
+# Site settings
+title: aljrico
+description: My Projects
+
+# User settings
+username: Alejandro J Rico
+user_description: Welcome to my site. Here you'll basic information about me and a selected list of my projects, such as R packages, some of my Git repositories and who knows what else.
+user_title: Data Scientist
+email: aljrico@gmail.com
+twitter_username: lorem_ipsum
+github_username:  aljrico
+gplus_username:  lorem_ipsum
+
+# Google-analytics
+google-analytics:
+  id: ""
+
+exclude: ['package.json', 'src' , 'node_modules']
+
+# Build settings
+markdown:   kramdown
+sass:
+  sass_dir: assets/_sass
+  style:    compressed

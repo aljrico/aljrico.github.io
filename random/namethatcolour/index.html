@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head profile="http://www.w3.org/2005/10/profile">
+<link rel="icon" type="image/x-icon" href="../../favicon.png">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title>Name that color</title>
+
+		<script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-50642071-1', 'aldomann.github.io'); ga('send', 'pageview');</script>
+		<script src="js/jquery.js"></script>
+		<script src="js/farbtastic.js"></script>
+		<script src="js/ntc.js"></script>
+		<script src="js/ntc_main.js"></script>
+
+		<link rel="stylesheet" href="../assets/css/styles.css">
+		<link rel="stylesheet" href="../assets/css/pygment_trac.css">
+		<link rel="stylesheet" href="style/farbtastic.css" type="text/css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Name that color</h1>
+			<hr>
+			<div id="ntc">
+				<div id="picker"></div>
+					<div id="colortag">
+					  <h2 id="colorname">Your colour</h2>
+					  <div id="colorpick" style="max-width: 70px"></div>
+					  <div id="colorbox"><div id="colorsolid"></div></div>
+					  <div id="colorpanel">
+						<div id="colorhex">Your colour:</div>
+						<input type="text" id="colorinp" class="inputbox" value="" maxlength="10" style="max-width: 70px"/>
+						<div id="colorrgb"></div>
+					  </div>
+					  <br>
+					  <p id="colorlegend">Outer box: your selected colour. Inner box: actual colour of closest match. </p>
+					</div>
+				<div class="clear"></div>
+			</div>
+			<p>Forked by <a href="https://github.com/aldomann/">aldomann</a>. Created by <a href="http://chir.ag/projects/ntc/">Chirag Mehta.</a></p>
+<!--
+			<footer>
+				<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+			</footer>
+-->
+		</div>
+		<script src="../assets/js/scale.fix.js"></script>
+	</body>
+</html>
+
