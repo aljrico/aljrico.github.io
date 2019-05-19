@@ -13,7 +13,7 @@ about_title:                "My Site"
 about_contact_email:        "aljrico@gmail.com"
 
 # menu:
-# - {name: 'About Me',     hardlink: true,   url: 'https://aldomann.com'}
+# - {name: 'About Me',     hardlink: true,   url: 'https://aljrico.github.io'}
 # - {name: 'Tech Stuff',   path: 'menu',     url: 'tech'}
 # - {name: 'Data Science', path: 'menu',     url: 'data-science'}
 # - {name: 'Design',       path: 'menu',     url: 'design'}
