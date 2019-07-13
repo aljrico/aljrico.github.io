@@ -6,17 +6,19 @@
 # google-ID: 'UA-112060364-1'
 
 # Page settings
+baseurl: "https://aljrico.github.io"
 about_avatar:               "true"
 about_name:                 "Alejandro J Rico"
 about_title:                "My Site"
-# about_subtitle:             "Data Scientist"
+about_subtitle:             "Data Scientist"
 about_contact_email:        "aljrico@gmail.com"
 
-# menu:
+menu:
 # - {name: 'About Me',     hardlink: true,   url: 'https://aljrico.github.io'}
 # - {name: 'Tech Stuff',   path: 'menu',     url: 'tech'}
-# - {name: 'Data Science', path: 'menu',     url: 'data-science'}
-# - {name: 'Design',       path: 'menu',     url: 'design'}
+- {name: 'Home',   hardlink: true,   url: 'https://aljrico.github.io'}
+- {name: 'Blog',     url: 'blog'}
+- {name: 'CV',   hardlink: true,   url: 'https://github.com/aljrico/cv/raw/master/AlejandroJimenezRico_CV.pdf'}
 # - {name: 'Tags',         path: '..',       url: 'tags'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer

@@ -1,0 +1,12 @@
+
+	<nav class="menu-content">
+		{% for item in site.data.header.menu %}
+			{% if item.hardlink == true %}
+				<h2 class="header-title" itemprop="jobTitle"> <a style = "text-decoration: none;" href="{{item.url}}">{{ item.name }} | </a></h2>
+
+			{% else %}
+				<h2 class="header-title" itemprop="jobTitle"> <a style = "text-decoration: none;" href="{{ site.data.header.baseurl }}/{{ item.url }}">{{ item.name }} | </a></h2>
+		{% endif %}
+		{% endfor %}
+	</nav>
+

@@ -9,9 +9,12 @@
 <div class="title-bar">
 
 	<!-- Your title is also defined in the _data/header.yml file -->
-	<h2 class="header-title" itemprop="jobTitle">{{ site.data.header.about_title }}</h2>
-	<h2 class="header-subtitle" itemprop="jobSubTitle">{{ site.data.header.about_subtitle }}</h2>
+	<!-- <h2 class="header-title" >{{ site.data.header.about_title }}</h2> -->
+	<!-- <h2 class="header-subtitle" itemprop="jobSubTitle">{{ site.data.header.about_subtitle }}</h2> -->
+
+	{% include menu.html %}
 
 	<!-- This is the markup for the icon links in the _data/header.yml file -->
 	{% include icon-links.html %}
 </div>
+
