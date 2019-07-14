@@ -18,7 +18,7 @@ menu:
 # - {name: 'Tech Stuff',   path: 'menu',     url: 'tech'}
 - {name: 'Home',   hardlink: true,   url: 'https://aljrico.github.io'}
 - {name: 'Blog',     url: 'blog'}
-- {name: 'CV',   hardlink: true,   url: 'https://github.com/aljrico/cv/raw/master/AlejandroJimenezRico_CV.pdf'}
+- {name: 'CV',   hardlink: true,   url: 'https://github.com/aljrico/aljrico.github.io/raw/master/AlejandroJimenezRico_CV.pdf'}
 # - {name: 'Tags',         path: '..',       url: 'tags'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
