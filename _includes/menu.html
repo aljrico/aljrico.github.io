@@ -4,7 +4,7 @@
 			{% if item.hardlink == true %}
 				<a href="{{item.url}}">{{ item.name }}</a>
 			{% else %}
-				<a href="{{ site.data.header.baseurl }}/{{ item.path }}/{{ item.url }}">{{ item.name }}</a>
+				<a href="{{ site.data.header.baseurl }}/{{ item.url }}">{{ item.name }}</a>
 		{% endif %}
 		{% endfor %}
 	</nav>
