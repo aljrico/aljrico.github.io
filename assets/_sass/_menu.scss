@@ -23,14 +23,14 @@
 }
 
 .menu-content a {
-	color: $blackish;
+	color: $dark-blue;
 	font-size: 1.2rem;
 	font-weight: 700;
 	padding-right: 10px;
 	text-decoration: none;
 
   &:hover {
-    color: #FF9940;
+    color: $dark-orange;
     transition: color 0.2s ease-in;
   }
 }
