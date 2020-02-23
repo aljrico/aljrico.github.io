@@ -30,12 +30,7 @@
 	text-decoration: none;
 
   &:hover {
-    border: 1px solid $main;
-    background-color: $dark-blue;
-    border-color: $dark-blue;
-    color: #fff;
-    transition: color 0.1s ease-in,
-                background-color 0.1s ease-in,
-                border-color 0.1s ease-in;
+    color: #FF9940;
+    transition: color 0.2s ease-in;
   }
 }
