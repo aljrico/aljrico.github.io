@@ -97,16 +97,16 @@
               border-color 0.1s ease-out;
   &:hover {
     border: 1px solid $main;
-    background-color: $green;
-    border-color: $green;
+    background-color: $dark-blue;
+    border-color: $dark-blue;
     color: #fff;
     transition: color 0.1s ease-in,
                 background-color 0.1s ease-in,
                 border-color 0.1s ease-in;
   }
   &:active {
-    background-color: $green;
-    border-color: $green;
+    background-color: $dark-blue;
+    border-color: $dark-blue;
     color: #fff;
     transition: color 0.1s ease-in,
                 background-color 0.1s ease-in,
