@@ -1,0 +1,35 @@
+/*
+	Menu
+*/
+
+.menu {
+	@include title-sans;
+	padding-top: 0.5rem;
+	padding-bottom: 2.5rem;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: $container-width;
+}
+
+@media (max-width: 768px) {
+	.menu {
+		width: 90vw;
+	}
+}
+
+.menu-content {
+	float: left;
+}
+
+.menu-content a {
+	color: $blackish;
+	font-size: 1.2rem;
+	font-weight: 700;
+	padding-right: 10px;
+	text-decoration: none;
+
+	&:hover {
+		color: $blacker;
+	}
+}
