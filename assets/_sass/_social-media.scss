@@ -37,7 +37,8 @@
 	&:hover {
 		color: $dark-orange;
 		transform: scale(1.5);
-		transition: color 0.2s ease-in;
+		transition: color 0.2s ease-in,
+		            transform 0.2s ease-in;
 	}
 }
 
